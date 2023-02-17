@@ -1,200 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css\bootstrap.min.css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <script src="js\bootstrap.min.js"></script>
-    <title>Document</title>
-  </head>
-  <body>
 
-    <div class="container-fluid">
-        <nav
-          class="navbar navbar-light bg-light border-bottom align-items-center justify-content-around"
-        >
-          <a class="navbar-brand" id="CompanyLogo">
-            <img src="images/logo.png" alt="logo" class="mw-100" />
-          </a>
-          <div class="d-flex">
-            <button class="border-0 bg-transparent">Stories</button>
-            <li class="nav-item dropdown" style="list-style: none">
-              <button
-                class="nav-link dropdown-toggle border-0 bg-transparent dropdown-toggle p-3 text-dark"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Policy
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css\bootstrap.min.css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="js\bootstrap.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-light bg-light border-bottom align-items-center justify-content-around">
+      <a class="navbar-brand" id="CompanyLogo">
+        <img src="images/logo.png" alt="logo" class="mw-100" />
+      </a>
+      <div class="d-flex">
+        <button class="border-0 bg-transparent">Stories</button>
+        <li class="nav-item dropdown" style="list-style: none">
+          <button class="nav-link dropdown-toggle border-0 bg-transparent dropdown-toggle p-3 text-dark"
+            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Policy
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider" />
             </li>
-          </div>
-          <div class="d-flex">
-            <img
-              src="images/user-img.png"
-              alt="avatar"
-              class="rounded-circle"
-              height="50"
-              width="50"
-            />
-            <li class="nav-item dropdown" style="list-style: none">
-              <button
-                class="nav-link dropdown-toggle border-0 bg-transparent dropdown-toggle p-3 text-dark HideThisClass"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Evan Donohue
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
             </li>
-          </div>
-        </nav>
-
-<!-- 
-
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav NavBarClass">
-            <li class="nav-item Stories">
-              <a class="nav-link" href="#">Stories</a>
-            </li>
-            <li class="nav-item dropdown Policy">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Policy
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-              </div>
-            </li>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light Avtar">
-              <div class="container-fluid">
-                <ul class="navbar-nav">
-              
-                   <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle d-flex align-items-center"
-                      href="#"
-                      id="navbarDropdownMenuLink"
-                      role="button"
-                      data-mdb-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <img
-                        src="images/user-img.png"
-                        class="rounded-circle"
-                        height="40"
-                        width="40"
-                        alt="Avatar"
-                        loading="lazy"
-                      />
-                      &nbsp; Evan Donohue &nbsp;
-                    </a>
-
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="navbarDropdownMenuLink"
-                    >
-                      <li>
-                        <a class="dropdown-item" href="#">My profile</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Settings</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Logout</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </nav>
           </ul>
-      
-      </nav> -->
+        </li>
+      </div>
+      <div class="d-flex">
+        <img src="images/user-img.png" alt="avatar" class="rounded-circle" height="50" width="50" />
+        <li class="nav-item dropdown" style="list-style: none">
+          <button class="nav-link dropdown-toggle border-0 bg-transparent dropdown-toggle p-3 text-dark HideThisClass"
+            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Evan Donohue
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </nav>
 
- 
-      <nav
-      class="navbar navbar-light bg-light shadow p-0 m-0 bg-body NewClassForHeight"  >
+
+
+    <nav class="navbar navbar-light bg-light shadow p-0 m-0 bg-body NewClassForHeight">
       <div>
         <a class="navbar-brand SearchLanding">
           <img src="images/search.png" alt="logo" class="mw-100" />
-          <input
-            type="text"
-            placeholder="Search Mission"
-            class="border-0 bg-transparent"
-          />
+          <input type="text" placeholder="Search Mission" class="border-0 bg-transparent" />
         </a>
       </div>
-      <div class="d-flex align-content-around" id="res-dropdown">
+      <div class="d-flex align-content-around collapse" id="res-dropdown">
         <div class="bg-body border border-bottom-0 border-top-0" id="Country">
-          <!-- <button
-            class="border-0 bg-transparent dropdown-toggle p-3"
-            data-ba-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Country
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul> -->
+
           <li class="nav-item dropdown" style="list-style: none">
-            <button
-              class="nav-link dropdown-toggle border-0 bg-transparent dropdown-toggle p-3 text-black-50"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+            <button class="nav-link dropdown-toggle border-0 bg-transparent dropdown-toggle p-3 text-black-50"
+              id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Country
             </button>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
               <li>
                 <a class="dropdown-item" href="#">Something else here</a>
               </li>
@@ -203,19 +89,16 @@
         </div>
         <div class="bg-body border border-bottom-0 border-top-0">
           <li class="nav-item dropdown" style="list-style: none">
-            <button
-              class="nav-link dropdown-toggle border-0 bg-transparent dropdown-toggle p-3 text-black-50"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+            <button class="nav-link dropdown-toggle border-0 bg-transparent dropdown-toggle p-3 text-black-50"
+              id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               City
             </button>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
               <li>
                 <a class="dropdown-item" href="#">Something else here</a>
               </li>
@@ -224,19 +107,16 @@
         </div>
         <div class="bg-body border border-bottom-0 border-top-0">
           <li class="nav-item dropdown" style="list-style: none">
-            <button
-              class="nav-link dropdown-toggle border-0 bg-transparent dropdown-toggle p-3 text-black-50"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+            <button class="nav-link dropdown-toggle border-0 bg-transparent dropdown-toggle p-3 text-black-50"
+              id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Theme
             </button>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
               <li>
                 <a class="dropdown-item" href="#">Something else here</a>
               </li>
@@ -245,19 +125,16 @@
         </div>
         <div class="bg-body border border-bottom-0 border-top-0">
           <li class="nav-item dropdown" style="list-style: none">
-            <button
-              class="nav-link dropdown-toggle border-0 bg-transparent dropdown-toggle p-3 text-black-50"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-             skill
+            <button class="nav-link dropdown-toggle border-0 bg-transparent dropdown-toggle p-3 text-black-50"
+              id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              skill
             </button>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
               <li>
                 <a class="dropdown-item" href="#">Something else here</a>
               </li>
@@ -266,75 +143,242 @@
         </div>
       </div>
     </nav>
+  </div>
 
-            
-    </div>
-<!-- 
-    <br>
-    <br>
-    <br> -->
 
-    <div class="row row-cols-1 row-cols-md-3 g-2 m-3 cardPadding">
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png"
-              class="card-img-top"
-              alt="img"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png"
-              class="card-img-top"
-              alt="img"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This card has supporting text below as a natural lead-in to
-                additional content.
-              </p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="images/Animal-welfare-&-save-birds-campaign-1.png"
-              class="card-img-top"
-              alt="ing"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
-              </p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
-          </div>
-        </div>
+  <div class="container-fluid">
+    <div class="container mt-2">
+
+      <div class="row">
+        <div class="col-1 border border-secondary text-muted" style="width:fit-content" id="FilterDiv">Tree Plantation<a
+            class="ps-2"><img src="images/cancel.png" height="10" width="10"></a></div>
+
+
+
+        <div class="col-1 border border-secondary text-muted" style="width:fit-content" id="FilterDiv">Canada<a
+            class="ps-2"><img src="images/cancel.png" height="10" width="10"></a></div>
+
+
+
+        <div class="col-1 border border-secondary text-muted" style="width:fit-content" id="FilterDiv">Toranto<a
+            class="ps-2"><img src="images/cancel.png" height="10" width="10"></a></div>
+
+
+
+        <div class="col-1 border border-secondary text-muted" style="width:fit-content" id="FilterDiv">Environment<a
+            class="ps-2"><img src="images/cancel.png" height="10" width="10"></a></div>
+
+
+
       </div>
     </div>
-  </body>
+  </div>
+
+  <div class="container-fluid gy-0">
+    <div class="container mt-2">
+
+      <div class="row">
+        <div class="col-8 h5"><p class="text-muted" style="display: inline;">Explor</p> <span><b class="h4">78 Mission</b></span></div>
+
+        <div class="col-2" style="width:fit-content">
+
+          <input type="dropdown" />
+        </div>
+
+        <div class="col-2">
+              <a><img src="images/grid.png"></a>
+            <a class="ps-3"><img src="images/list.png"></a>
+        </div>
+    </div>
+  </div>
+  </div>
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-2 m-3">
+    <div class="col">
+      <div class="card border border-secondary" style="max-width: 27rem">
+        <div>
+            <img class="card-img-top" src="images/Animal-welfare-&-save-birds-campaign-1.png" alt="Card image cap" />
+            <div>
+                <p class="overlapping text-muted">Environment</p>
+            </div>
+        </div>
+        <div class="card-body" style="margin-top: -35px;">
+            <h5 class="card-title">Animal welfare & save Birds campain</h5>
+            <p class="card-text text-muted">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
+                quam a repellat,
+            </p>
+
+            <div class="d-flex row">
+                <div class="col-6">
+                    <h6 class="card-subtitle text-muted pt-1">Jr Foundation</h6>
+                </div>
+                <div class="col-6">
+                    <h6 class="text-muted" style="text-align: end">Rating</h6>
+                </div>
+            </div>
+            <hr />
+            <div>
+                <p class="overlapping1 text-muted">
+                    From 10/01/2019 until 25/02/2019
+                </p>
+            </div>
+        </div>
+
+        <div class="d-flex row NewClassForSeats">
+            <div class="col-6">
+                <div class="d-flex imageadjuster">
+                    <div>
+                        <img src="images/Seats-left.png" class="paddingclass" alt="" />
+                    </div>
+                    <div class="ps-70 newclass23">
+                        <h6 class="fw-normal">10</h6>
+                        <h6  class="fw-normal">Seats left</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="d-flex imageadjuster">
+                    <div>
+                        <img src="images/deadline.png" class="" style="padding-top: 7px;" alt="" />
+                    </div>
+                    <div class="ps-70 newclass23">
+                        <h6  class="fw-normal">09/01/2019</h6>
+                        <h6  class="fw-normal">Deadline</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div style="height: 60px;"><a class="btn m-8 btn btn-outline-warning Applybtn"  role="button">Apply<img src="images/right-arrow.png" style="padding-left: 10px;"></a></div>
+    </div>
+
+    </div>
+    <div class="col">
+      <div class="card border border-secondary" style="max-width: 27rem">
+        <div>
+            <img class="card-img-top" src="images/Animal-welfare-&-save-birds-campaign-1.png" alt="Card image cap" />
+            <div>
+                <p class="overlapping text-muted">Environment</p>
+            </div>
+        </div>
+        <div class="card-body" style="margin-top: -35px;">
+            <h5 class="card-title">Animal welfare & save Birds campain</h5>
+            <p class="card-text text-muted">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
+                quam a repellat,
+            </p>
+
+            <div class="d-flex row">
+                <div class="col-6">
+                    <h6 class="card-subtitle text-muted pt-1">Jr Foundation</h6>
+                </div>
+                <div class="col-6">
+                    <h6 class="text-muted" style="text-align: end">Rating</h6>
+                </div>
+            </div>
+            <hr />
+            <div>
+                <p class="overlapping1 text-muted">
+                    From 10/01/2019 until 25/02/2019
+                </p>
+            </div>
+        </div>
+
+        <div class="d-flex row NewClassForSeats">
+            <div class="col-6">
+                <div class="d-flex imageadjuster">
+                    <div>
+                        <img src="images/Seats-left.png" class="paddingclass" alt="" />
+                    </div>
+                    <div class="ps-70 newclass23">
+                        <h6  class="fw-normal">10</h6>
+                        <h6  class="fw-normal">Seats left</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="d-flex imageadjuster">
+                    <div>
+                        <img src="images/deadline.png" class="" style="padding-top: 7px;" />
+                    </div>
+                    <div class="ps-70 newclass23">
+                        <h6  class="fw-normal">09/01/2019</h6>
+                        <h6  class="fw-normal">Deadline</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div style="height: 60px;"><a class="btn m-8 btn btn-outline-warning Applybtn"  role="button">Apply<img src="images/right-arrow.png" style="padding-left: 10px;"></a></div>
+    </div>
+      
+    </div>
+    <div class="col">
+      <div class="card border border-secondary" style="max-width: 27rem">
+        <div>
+            <img class="card-img-top" src="images/Animal-welfare-&-save-birds-campaign-1.png" alt="Card image cap" />
+            <div>
+                <p class="overlapping text-muted">Environment</p>
+            </div>
+        </div>
+        <div class="card-body" style="margin-top: -35px;">
+            <h5 class="card-title">Animal welfare & save Birds campain</h5>
+            <p class="card-text text-muted">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
+                quam a repellat,
+            </p>
+
+            <div class="d-flex row">
+                <div class="col-6">
+                    <h6 class="card-subtitle text-muted pt-1">Jr Foundation</h6>
+                </div>
+                <div class="col-6">
+                    <h6 class="text-muted" style="text-align: end">Rating</h6>
+                </div>
+            </div>
+            <hr />
+            <div>
+                <p class="overlapping1 text-muted">
+                    From 10/01/2019 until 25/02/2019
+                </p>
+            </div>
+        </div>
+
+        <div class="d-flex row NewClassForSeats">
+            <div class="col-6">
+                <div class="d-flex imageadjuster">
+                    <div>
+                        <img src="images/Seats-left.png" class="paddingclass" alt="" />
+                    </div>
+                    <div class="ps-70 newclass23">
+                        <h6  class="fw-normal">10</h6>
+                        <h6  class="fw-normal">Seats left</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="d-flex imageadjuster">
+                    <div>
+                        <img src="images/deadline.png" class="" style="padding-top: 7px;" alt="" />
+                    </div>
+                    <div class="ps-70 newclass23">
+                        <h6  class="fw-normal">09/01/2019</h6>
+                        <h6  class="fw-normal">Deadline</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div style="height: 60px;"><a class="btn m-8 btn btn-outline-warning Applybtn" role="button">Apply<img src="images/right-arrow.png" style="padding-left: 10px;"></a></div>
+    </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+</body>
+
 </html>

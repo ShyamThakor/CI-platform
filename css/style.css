@@ -517,6 +517,58 @@
     display: inline;
 }
 
+#FilterDiv{
+    margin: 10px;
+    border-radius: 15px;
+    padding-left: 3px;
+    padding: 5px;
+    font-size: 12px;
+    
+}
+
+.overlapping{
+    position: relative;
+    margin-top: -23px;
+    text-align: center;
+    width: fit-content;
+    background-color: white;
+    margin-left: 32%;
+    border-radius: 16px;
+    padding: 20px;
+    padding-top: 3px;
+}
+
+.overlapping1{
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: -33px;
+    text-align: center;
+    width: fit-content;
+    background-color: white;
+    margin-left: 21%;
+    border-radius: 16px;
+    padding: 10px;
+    padding-top: 7px;
+}
+
+.fontsizeofhtag{
+    font-size: 1rem;
+}
+.paddingclass{
+    padding-top: 13px;
+}
+
+.newclass23{
+    padding-left: 14px;
+
+}
+
+.imageadjuster{
+    margin-left: 23%;
+}
 
 .navbar-brand input{
     margin-left: 8px;
@@ -531,11 +583,30 @@
 .SearchLanding{
     margin-left: 40%;
 }
+.SearchLanding input{
+    outline: none;
+}
+
+.Applybtn{
+    padding: 8px;
+    border-radius: 23px;
+    margin-left: 27%;
+    width: 40%;
+}
 
 
+.NewClassForSeats{
+    margin-top: -30px;
+    width: inherit;
+}
 
 
+@media screen and (min-width: 768px) and (max-width: 2560px){
+    #res-dropdown{
+        margin-right: 100px;
+    }
 
+}
 
 
 @media screen and (min-width: 473px) and (max-width: 767px){
