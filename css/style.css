@@ -593,7 +593,66 @@
     margin-left: 27%;
     width: 40%;
 }
+.Iconclass{
+    display: table-caption;
+    margin-top: -250px;
+    margin-left: 250px;
+}
+.borderclassForIcon{
+    padding: 12px;
+    background: black;
+    opacity: 0.6;
+    border-radius: 30px;
+}
+.LocationClass{
+    background-color: #333333;
+}
 
+.card {
+    margin-bottom: 1rem;
+  }
+  
+  .list-view .row > [class*=col-] {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .list-view .card {
+    flex-direction: row;
+  }
+  @media (max-width: 575.98px) {
+    .list-view .card {
+      flex-direction: column;
+    }
+  }
+  .list-view .card > .card-img-top {
+    width: auto;
+  }
+  .list-view .card .card-body {
+    display: inline-block;
+  }
+ 
+ 
+.LocationClass a{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    margin-left: -20px;
+}
+
+.borderclassForIcon1{
+    padding: 12px;
+    background: black;
+    opacity: 0.6;
+    border-radius: 30px;
+}
+
+
+.HeartAndUser{
+    display: grid;
+    margin-top: 30px;
+  
+     margin-left: 50px;
+}
 
 .NewClassForSeats{
     margin-top: -30px;
@@ -749,3 +808,198 @@
   
   }
 
+
+
+  /* New Code Vedant */
+
+
+
+  .grid .mission-image-section {
+    position: relative;
+}
+
+.grid .mission-img {
+    width: 100%;
+}
+
+.grid .pin {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.604);
+    border-radius: 50px;
+    padding: 5px 15px;
+    color: white;
+}
+
+.grid .favourite {
+    position: absolute;
+    bottom: 5rem;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.604);
+    border-radius: 50px;
+    padding: 5px 15px;
+    color: white;
+}
+
+.grid .adduser {
+    position: absolute;
+    bottom: 2rem;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.604);
+    border-radius: 50px;
+    padding: 5px 15px;
+    color: white;
+}
+
+.grid .cardtitle-class {
+    justify-content: center;
+}
+
+.grid .card-title {
+    border: 1px solid lightgray;
+    margin-top: -15px;
+    background: white;
+    width: fit-content;
+    border-radius: 30px;
+    border-color: gray;
+    padding: 0px 20px 0px 20px;
+    color: gray;
+    z-index: 1;
+}
+
+.grid .DateTime-class {
+    justify-content: center;
+}
+
+.grid .DateTime-title {
+    border: 1px solid lightgray;
+    margin-top: -30px;
+    background: white;
+    width: fit-content;
+    border-radius: 30PX;
+    border-color: gray;
+    padding-left: 20px;
+    padding-top: 2px;
+    padding-right: 20px;
+    color: gray;
+    z-index: 1;
+}
+
+.grid .company-star {
+    justify-content: space-between;
+}
+
+.grid .seats-left-deadline {
+    justify-content: space-between;
+}
+
+.grid .apply-btn {
+    justify-content: center;
+    height: fit-content;
+}
+
+.grid .apply-img {
+    width: 20px;
+    height: 20px;
+}
+
+.list .card {
+    margin: 10px 0px 0px 0px;
+}
+
+.list .mission-image-section {
+    position: relative;
+    max-width: 100vh;
+    max-height: 100vh;
+}
+
+.list .mission-img {
+    height: 100%;
+    width: 50vh;
+}
+
+.list .pin {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.604);
+    border-radius: 50px;
+    padding: 5px 15px;
+    color: white;
+}
+
+.list .favourite {
+    position: absolute;
+    bottom: 5rem;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.604);
+    border-radius: 50px;
+    padding: 5px 15px;
+    color: white;
+}
+
+.list .adduser {
+    position: absolute;
+    bottom: 2rem;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.604);
+    border-radius: 50px;
+    padding: 5px 15px;
+    color: white;
+}
+
+.list .cardtitle-class {
+    justify-content: center;
+}
+
+.list .card-title {
+    border: 1px solid lightgray;
+    margin-top: -15px;
+    background: white;
+    width: fit-content;
+    border-radius: 30px;
+    border-color: gray;
+    padding: 0px 20px 0px 20px;
+    color: gray;
+    z-index: 1;
+}
+
+.list .card {
+    flex-direction: row;
+}
+
+.list .DateTime-title {
+    border: 1px solid lightgray;
+    margin-top: -30px;
+    background: white;
+    width: fit-content;
+    border-radius: 30px;
+    border-color: gray;
+    padding-left: 20px;
+    padding-top: 2px;
+    padding-right: 20px;
+    color: gray;
+    z-index: 1;
+}
+
+.list .company-star-datetime-class {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list .seats-left-deadline-button-div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.list .apply-btn {
+    height: fit-content;
+    padding: 10px;
+}
+
+.list .apply-img {
+    width: 20px;
+    height: 20px;
+}

@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="css\bootstrap.min.css" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <script src="js\bootstrap.min.js"></script>
+
   <title>Document</title>
+
 </head>
 
 <body>
@@ -26,14 +28,10 @@
             Policy
           </button>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </li>
+            <li><a class="dropdown-item" href="#">Volunteering</a></li>
+            <li><a class="dropdown-item" href="#">Sponsored</a></li>
+            
+            
           </ul>
         </li>
       </div>
@@ -45,14 +43,11 @@
             Evan Donohue
           </button>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li>
-              <hr class="dropdown-divider" />
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </li>
+            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+            <li><a class="dropdown-item" href="#">My Account</a></li>
+            <li><a class="dropdown-item" href="#">Help Center</a></li>
+            <li><a class="dropdown-item" href="#">Log Out</a></li>
+           
           </ul>
         </li>
       </div>
@@ -76,14 +71,37 @@
               Country
             </button>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider" />
+              <li> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox" value="Afghanistan" id="Afghanistan">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Afghanistan
+                </label>
               </li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
+              <li> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox" value="Albania" id="Albania">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Albania
+                </label>
               </li>
+
+              <li> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox" value="Algeria" id="Algeria">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Algeria
+                </label>
+              </li>
+
+              <li> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox" value="Barbados" id=" Barbados">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Barbados
+                </label>
+              </li>
+
+              <li> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox" value="Belarus" id="Belarus">
+                <label class="form-check-label" for="flexCheckDefault">
+                 Belarus
+                </label>
+              </li>
+
+
+
             </ul>
           </li>
         </div>
@@ -94,13 +112,33 @@
               City
             </button>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider" />
+              <li> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox" value="Tirana" id="Tirana">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Tirana
+                </label>
               </li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
+              <li> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox" value="Banglore" id="Banglore">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Banglore
+                </label>
+              </li>
+
+              <li> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox" value="Delhi" id="Delhi">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Delhi
+                </label>
+              </li>
+
+              <li> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox" value="Mumbai" id="Mumbai">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Mumbai
+                </label>
+              </li>
+
+              <li> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox" value="Gandinagar" id="Gandinagar">
+                <label class="form-check-label" for="flexCheckDefault">
+                 Gandinagar
+                </label>
               </li>
             </ul>
           </li>
@@ -112,14 +150,41 @@
               Theme
             </button>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider" />
+              <li> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()" value="Education" id="Education">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Education
+                </label>
               </li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
+              <li> <input class="form-check-input"  type="checkbox" onchange="CheckBoxListener()" value="Children" id="Children">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Children
+                </label>
               </li>
+
+              <li> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()" value="Health" id="Health">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Health
+                </label>
+              </li>
+
+              <li> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()" value="Animals" id="Animals">
+                <label class="form-check-label" for="flexCheckDefault">
+                 Animals
+                </label>
+              </li>
+
+              <li> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()" value="Environment" id="Environment">
+                <label class="form-check-label" for="flexCheckDefault">
+                 Environment
+                </label>
+              </li>
+
+              <li> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()" value="Nutritions" id="Nutritions">
+                <label class="form-check-label" for="flexCheckDefault">
+                 Nutritions
+                </label>
+              </li>
+
             </ul>
           </li>
         </div>
@@ -130,13 +195,27 @@
               skill
             </button>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider" />
+              <li> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Astronomy
+                </label>
               </li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
+              <li> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Computer Science
+                </label>
+              </li>
+
+              <li> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckDefault">
+                  History
+                </label>
+              </li>
+
+              <li> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()" value="" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckDefault">
+                Research
+                </label>
               </li>
             </ul>
           </li>
@@ -155,17 +234,17 @@
 
 
 
-        <div class="col-1 border border-secondary text-muted" style="width:fit-content" id="FilterDiv">Canada<a
+        <div class="col-1 border border-secondary text-muted" style="width:fit-content" id="FilterDiv1">Canada<a
             class="ps-2"><img src="images/cancel.png" height="10" width="10"></a></div>
 
 
 
-        <div class="col-1 border border-secondary text-muted" style="width:fit-content" id="FilterDiv">Toranto<a
+        <div class="col-1 border border-secondary text-muted" style="width:fit-content" id="FilterDiv2">Toranto<a
             class="ps-2"><img src="images/cancel.png" height="10" width="10"></a></div>
 
 
 
-        <div class="col-1 border border-secondary text-muted" style="width:fit-content" id="FilterDiv">Environment<a
+        <div class="col-1 border border-secondary text-muted" style="width:fit-content" id="FilterDiv3">Environment<a
             class="ps-2"><img src="images/cancel.png" height="10" width="10"></a></div>
 
 
@@ -173,12 +252,15 @@
       </div>
     </div>
   </div>
-
+  <h4 style="color:green" id="result"></h3>   
+  <!-- 
   <div class="container-fluid gy-0">
     <div class="container mt-2">
 
       <div class="row">
-        <div class="col-8 h5"><p class="text-muted" style="display: inline;">Explor</p> <span><b class="h4">78 Mission</b></span></div>
+        <div class="col-8 h5">
+          <p class="text-muted" style="display: inline;">Explor</p> <span><b class="h4">78 Mission</b></span>
+        </div>
 
         <div class="col-2" style="width:fit-content">
 
@@ -186,198 +268,104 @@
         </div>
 
         <div class="col-2">
-              <a><img src="images/grid.png"></a>
-            <a class="ps-3"><img src="images/list.png"></a>
+          <button class="btn " onclick="listView()"><img src="images/list.png" width="30" height="20"> </button>
+                <button class="btn " onclick="gridView()"><img src="images/grid.png" width="30" height="30"> </button>
         </div>
+      </div>
     </div>
   </div>
-  </div>
-
-<div class="container p-0">
-  <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-2 m-3">
-    <div class="col">
-      <div class="card border border-secondary" style="max-width: 23rem">
-        <div>
-            <img class="card-img-top" src="images/Animal-welfare-&-save-birds-campaign-1.png" alt="Card image cap" />
-            <div>
-                <p class="overlapping text-muted">Environment</p>
-            </div>
-        </div>
-        <div class="card-body" style="margin-top: -35px;">
-            <h5 class="card-title">Animal welfare & save Birds campain</h5>
-            <p class="card-text text-muted">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
-                quam a repellat,
-            </p>
-
-            <div class="d-flex row">
-                <div class="col-6">
-                    <h6 class="card-subtitle text-muted pt-1">Jr Foundation</h6>
+  <div class="row grid" id="list-grid-select">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-element">
+        <div class="card">
+            <div class="mission-image-section">
+                <div class="h-100">
+                    <img src="images/Grow-Trees-On-the-path-to-environment-sustainability.png" alt="" class="mission-img">
                 </div>
-                <div class="col-6">
-                    <h6 class="text-muted" style="text-align: end">Rating</h6>
+                <div class="pin">
+                    <img src="images/pin.png" alt="">&nbsp;
+                    Toronto
                 </div>
-            </div>
-            <hr />
-            <div>
-                <p class="overlapping1 text-muted">
-                    From 10/01/2019 until 25/02/2019
-                </p>
-            </div>
-        </div>
+                <div class="favourite">
+                    <img src="images/heart.png" alt="">
+                </div>
+                <div class="adduser">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="d-flex cardtitle-class p-0 g-0 m-0">
+                    <p class="card-title">Environment</p>
+                </div>
+            
+                <div class="card-text m-2">
+                    <h4>
+                        Some quick example text to build on the card title and make up
+                        the bulk of the card's content.
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti nesciunt mollitia voluptate minus harum, sequi fugiat
+                        quis excepturi ipsum animi quod reiciendis voluptatibus aperiam alias unde, esse possimus asperiores?
+                    </p>
+                </div>
+                <div class="company-star-datetime-class p-2">
+                    <div class="d-flex company-star">
+                        <p>Earth vale</p>
+                        <div>
+                            @for (int i = 1; i < 6; i++)
+                            {
+                                <img src="images/selected-star.png" />
+                            }
+                        </div>
+                    </div>
 
-        <div class="d-flex row NewClassForSeats">
-            <div class="col-6">
-                <div class="d-flex imageadjuster">
                     <div>
-                        <img src="images/Seats-left.png" class="paddingclass" alt="" />
+                        <hr />
+                        <div class="d-flex DateTime-class">
+                            <p class="DateTime-title">From 10/01/2019 to 25/02/2019</p>
+                        </div>
                     </div>
-                    <div class="ps-70 newclass23">
-                        <h6 class="fw-normal">10</h6>
-                        <h6  class="fw-normal">Seats left</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="d-flex imageadjuster paddingadjust">
-                    <div>
-                        <img src="images/deadline.png" class="" style="padding-top: 7px;" alt="" />
-                    </div>
-                    <div class="ps-70 newclass23">
-                        <h6  class="fw-normal">09/01/2019</h6>
-                        <h6  class="fw-normal">Deadline</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div style="height: 60px;"><a class="btn m-8 btn btn-outline-warning Applybtn"  role="button">Apply<img src="images/right-arrow.png" style="padding-left: 10px;"></a></div>
-    </div>
 
-    </div>
-    <div class="col">
-      <div class="card border border-secondary" style="max-width: 23rem">
-        <div>
-            <img class="card-img-top" src="images/Animal-welfare-&-save-birds-campaign-1.png" alt="Card image cap" />
-            <div>
-                <p class="overlapping text-muted">Environment</p>
-            </div>
-        </div>
-        <div class="card-body" style="margin-top: -35px;">
-            <h5 class="card-title">Animal welfare & save Birds campain</h5>
-            <p class="card-text text-muted">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
-                quam a repellat,
-            </p>
-
-            <div class="d-flex row">
-                <div class="col-6">
-                    <h6 class="card-subtitle text-muted pt-1">Jr Foundation</h6>
                 </div>
-                <div class="col-6">
-                    <h6 class="text-muted" style="text-align: end">Rating</h6>
+                <div class="seats-left-deadline-button-div">
+                    <div class="d-flex seats-left-deadline ">
+                        <div class="d-flex mx-5">
+                            <img class="w-50 h-50 mt-2" src="images/Seats-left.png" alt="" />
+                            <div class="mx-2">
+                                <h4 class="mb-0">23</h4>
+                                <p>hhhh</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mx-5">
+                            <img class="w-50 h-50 mt-2" src="images/mission.png" alt="" />
+                            <div class="mx-2">
+                                <h4 class="mb-0">23</h4>
+                                <p>hhhh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="d-flex apply-btn">
+                        <button class="btn rounded-pill px-4 btn-outline-warning"> Apply <img src="images/right-arrow.png" class="apply-img" alt="" /></button>
+                    </div>
                 </div>
-            </div>
-            <hr />
-            <div>
-                <p class="overlapping1 text-muted">
-                    From 10/01/2019 until 25/02/2019
-                </p>
             </div>
         </div>
 
-        <div class="d-flex row NewClassForSeats">
-            <div class="col-6">
-                <div class="d-flex imageadjuster">
-                    <div>
-                        <img src="images/Seats-left.png" class="paddingclass" alt="" />
-                    </div>
-                    <div class="ps-70 newclass23">
-                        <h6  class="fw-normal">10</h6>
-                        <h6  class="fw-normal">Seats left</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="d-flex imageadjuster paddingadjust">
-                    <div>
-                        <img src="images/deadline.png" class="" style="padding-top: 7px;" />
-                    </div>
-                    <div class="ps-70 newclass23">
-                        <h6  class="fw-normal">09/01/2019</h6>
-                        <h6  class="fw-normal">Deadline</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div style="height: 60px;"><a class="btn m-8 btn btn-outline-warning Applybtn"  role="button">Apply<img src="images/right-arrow.png" style="padding-left: 10px;"></a></div>
     </div>
-      
-    </div>
-    <div class="col">
-      <div class="card border border-secondary" style="max-width: 23rem">
-        <div>
-            <img class="card-img-top" src="images/Animal-welfare-&-save-birds-campaign-1.png" alt="Card image cap" />
-            <div>
-                <p class="overlapping text-muted">Environment</p>
-            </div>
-        </div>
-        <div class="card-body" style="margin-top: -35px;">
-            <h5 class="card-title">Animal welfare & save Birds campain</h5>
-            <p class="card-text text-muted">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
-                quam a repellat,
-            </p>
-
-            <div class="d-flex row">
-                <div class="col-6">
-                    <h6 class="card-subtitle text-muted pt-1">Jr Foundation</h6>
-                </div>
-                <div class="col-6">
-                    <h6 class="text-muted" style="text-align: end">Rating</h6>
-                </div>
-            </div>
-            <hr />
-            <div>
-                <p class="overlapping1 text-muted">
-                    From 10/01/2019 until 25/02/2019
-                </p>
-            </div>
-        </div>
-
-        <div class="d-flex row NewClassForSeats">
-            <div class="col-6">
-                <div class="d-flex imageadjuster">
-                    <div>
-                        <img src="images/Seats-left.png" class="paddingclass" alt="" />
-                    </div>
-                    <div class="ps-70 newclass23">
-                        <h6  class="fw-normal">10</h6>
-                        <h6  class="fw-normal">Seats left</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="d-flex imageadjuster paddingadjust">
-                    <div>
-                        <img src="images/deadline.png" class="" style="padding-top: 7px;" alt="" />
-                    </div>
-                    <div class="ps-70 newclass23">
-                        <h6  class="fw-normal">09/01/2019</h6>
-                        <h6  class="fw-normal">Deadline</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div style="height: 60px;"><a class="btn m-8 btn btn-outline-warning Applybtn" role="button">Apply<img src="images/right-arrow.png" style="padding-left: 10px;"></a></div>
-    </div>
-    </div>
-  </div>
-</div>
+    
+</div> -->
 
   </div>
+  <!-- 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script> -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="js/LandingPage.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez"></script> -->
+
 
 </body>
 
