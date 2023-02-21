@@ -241,6 +241,15 @@
     margin-left: 34%;
 }
 
+.ddown{
+    padding: 4px;
+    border-width: 0.1px;
+    border-color: #777;
+}
+.ddown option{
+    margin: 4px;
+    padding: 20px;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 

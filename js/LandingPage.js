@@ -52,23 +52,23 @@ function CheckBoxListener() {
   var Barbados = document.getElementById("Barbados");  
   var Belarus = document.getElementById("Belarus");  
 
+
   const Country = []
-
-
 
   if (Afghanistan.checked){  
     var y = document.getElementById("Afghanistan").value;  
-    return document.getElementById("FilterDiv").innerHTML = y;  
+    return document.getElementById("FilterDiv").innerHTML = y; 
+   
    
   }  
   else if (Albania.checked == true){  
     var y = document.getElementById("Albania").value;  
-    return document.getElementById("FilterDiv1").innerHTML = y; 
+    return document.getElementById("FilterDiv").innerHTML = y; 
     
   }   
   else if (Algeria.checked == true){  
     var n = document.getElementById("Algeria").value;  
-    return document.getElementById("FilterDiv2").innerHTML = n; 
+    return document.getElementById("FilterDiv").innerHTML = n; 
     
   }  
   else if (Barbados.checked == true){  
