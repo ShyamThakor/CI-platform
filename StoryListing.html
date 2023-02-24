@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css\bootstrap.min.css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/StoryListing.css" rel="stylesheet" type="text/css" />
+    <script src="js\bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-light border-bottom align-items-center justify-content-around">
+            <a class="navbar-brand" id="CompanyLogo">
+              <img src="images/logo.png" alt="logo" class="mw-100" />
+            </a>
+            <div class="d-flex">
+              <button class="border-0 bg-transparent">Stories</button>
+              <li class="nav-item dropdown" style="list-style: none">
+                <button class="nav-link dropdown-toggle border-0 bg-transparent dropdown-toggle p-3 text-dark"
+                  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Policy
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Volunteering</a></li>
+                  <li><a class="dropdown-item" href="#">Sponsored</a></li>
+      
+      
+                </ul>
+              </li>
+            </div>
+            <div class="d-flex">
+              <img src="images/user-img.png" alt="avatar" class="rounded-circle" height="50" width="50" />
+              <li class="nav-item dropdown" style="list-style: none">
+                <button class="nav-link dropdown-toggle border-0 bg-transparent dropdown-toggle p-3 text-dark HideThisClass"
+                  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Evan Donohue
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                  <li><a class="dropdown-item" href="#">My Account</a></li>
+                  <li><a class="dropdown-item" href="#">Help Center</a></li>
+                  <li><a class="dropdown-item" href="#">Log Out</a></li>
+      
+                </ul>
+              </li>
+            </div>
+          </nav>
+
+          <nav class="navbar navbar-light bg-light shadow p-0 m-0 bg-body NewClassForHeight">
+            <div>
+              <a class="navbar-brand SearchLanding">
+                <img src="images/search.png" alt="logo" class="mw-100" />
+                <input type="text" placeholder="Search Mission" class="border-0 bg-transparent" />
+              </a>
+            </div>
+            <div class="d-flex align-content-around collapse" id="res-dropdown">
+              <div class="bg-body border border-bottom-0 border-top-0" id="Country">
+      
+                <li class="nav-item dropdown" style="list-style: none">
+                  <button class="nav-link dropdown-toggle border-0 bg-transparent dropdown-toggle p-3 text-black-50"
+                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Country
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="ps-4 m-1"> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox"
+                        value="Afghanistan" id="Afghanistan">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Afghanistan
+                      </label>
+                    </li>
+                    <li class="ps-4 m-1"> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox"
+                        value="Albania" id="Albania">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Albania
+                      </label>
+                    </li>
+      
+                    <li class="ps-4 m-1"> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox"
+                        value="Algeria" id="Algeria">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Algeria
+                      </label>
+                    </li>
+      
+                    <li class="ps-4 m-1"> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox"
+                        value="Barbados" id=" Barbados">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Barbados
+                      </label>
+                    </li>
+      
+                    <li class="ps-4 m-1"> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox"
+                        value="Belarus" id="Belarus">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Belarus
+                      </label>
+                    </li>
+      
+                  </ul>
+                </li>
+              </div>
+      
+              <div class="bg-body border border-bottom-0 border-top-0">
+                <li class="nav-item dropdown" style="list-style: none">
+                  <button class="nav-link dropdown-toggle border-0 bg-transparent dropdown-toggle p-3 text-black-50"
+                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    City
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="ps-4 m-1"> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox"
+                        value="Tirana" id="Tirana">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Tirana
+                      </label>
+                    </li>
+                    <li class="ps-4 m-1"> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox"
+                        value="Banglore" id="Banglore">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Banglore
+                      </label>
+                    </li>
+      
+                    <li class="ps-4 m-1"> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox"
+                        value="Delhi" id="Delhi">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Delhi
+                      </label>
+                    </li>
+      
+                    <li class="ps-4 m-1"> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox"
+                        value="Mumbai" id="Mumbai">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Mumbai
+                      </label>
+                    </li>
+      
+                    <li class="ps-4 m-1"> <input class="form-check-input" onchange="CheckBoxListener()" type="checkbox"
+                        value="Gandinagar" id="Gandinagar">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Gandinagar
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+              </div>
+              <div class="bg-body border border-bottom-0 border-top-0">
+                <li class="nav-item dropdown" style="list-style: none">
+                  <button class="nav-link dropdown-toggle border-0 bg-transparent dropdown-toggle p-3 text-black-50"
+                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Theme
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="ps-4 m-1"> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()"
+                        value="Education" id="Education">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Education
+                      </label>
+                    </li>
+                    <li class="ps-4 m-1"> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()"
+                        value="Children" id="Children">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Children
+                      </label>
+                    </li>
+      
+                    <li class="ps-4 m-1"> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()"
+                        value="Health" id="Health">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Health
+                      </label>
+                    </li>
+      
+                    <li class="ps-4 m-1"> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()"
+                        value="Animals" id="Animals">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Animals
+                      </label>
+                    </li>
+      
+                    <li class="ps-4 m-1"> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()"
+                        value="Environment" id="Environment">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Environment
+                      </label>
+                    </li>
+      
+                    <li class="ps-4 m-1"> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()"
+                        value="Nutritions" id="Nutritions">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Nutritions
+                      </label>
+                    </li>
+      
+                  </ul>
+                </li>
+              </div>
+              <div class="bg-body border border-bottom-0 border-top-0">
+                <li class="nav-item dropdown" style="list-style: none">
+                  <button class="nav-link dropdown-toggle border-0 bg-transparent dropdown-toggle p-3 text-black-50"
+                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    skill
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="ps-4 m-1"> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()"
+                        value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Astronomy
+                      </label>
+                    </li>
+                    <li class="ps-4 m-1"> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()"
+                        value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Computer
+                      </label>
+                    </li>
+      
+                    <li class="ps-4 m-1"> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()"
+                        value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        History
+                      </label>
+                    </li>
+      
+                    <li class="ps-4 m-1"> <input class="form-check-input" type="checkbox" onchange="CheckBoxListener()"
+                        value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Research
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+          </nav>
+          <div class="container-fluid gx-0 ">
+            <div class="row-cols-1 bg-dark">
+                 <img class="ImageSetter" src="images/Grow-Trees-On-the-path-to-environment-sustainability-login.png">
+                 <div class="NewDivForOverlappingText">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum eveniet sapiente
+                  inventore dignissimos nihil ipsam dolores facilis exercitationem iusto quos.</p>
+                  <a class="border btn p-2 px-3">Share your story<img src="rightwhitearrow.jpg"></a>
+                
+                </div>
+            </div>
+
+          </div>
+
+         
+
+          <div class="container my-5">
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" class="card-img-top" alt="...">
+                    
+                  <div>
+                    <p class="Overlapping px-3 py-1">Customer Experience</p>
+                  </div>
+                    <div class="card-body">
+                      <h5 class="card-title">10 User and Customer Engagement Strategies for 2019</h5>
+                      <p class="card-text fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptates tenetur natus nobis nihil officiis reiciendis, expedita unde reprehenderit,
+                         debitis incidunt tempore excepturi? Nemo odio sapiente fugit perspiciatis, vitae odit.</p>
+                         <div class="row px-2">
+                           <div class="col d-flex">
+
+                            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp" class="rounded-circle mb-3" style="width: 50px;"alt="Avatar" />
+
+                            <h5 class="mb-2 fs-5 px-4 py-3 font-weight-normal"><strong style="font-weight: 300;">John Doe</strong></h5>
+
+                           </div>
+              
+
+                         </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="images/Animal-welfare-&-save-birds-campaign-1.png" class="card-img-top" alt="...">
+                    <div>
+                      <p class="Overlapping px-3 py-1">Updates</p>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">10 User and Customer Engagement Strategies for 2019</h5>
+                      <p class="card-text fs-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus id eum, ad recusandae aut iste doloremque quae aspernatur, consequatur qui sit,
+                         omnis adipisci perspiciatis quasi. Non nobis ratione iure velit.</p>
+                         <div class="row px-2">
+                          <div class="col d-flex">
+
+                           <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp" class="rounded-circle mb-3" style="width: 50px;"alt="Avatar" />
+
+                           <h5 class="mb-2 fs-5 px-4 py-3 font-weight-normal"><strong style="font-weight: 300;">John Doe</strong></h5>
+
+                          </div>
+             
+
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png" class="card-img-top" alt="...">
+                    <div>
+                      <p class="Overlapping px-3 py-1">Customer Experience</p>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">10 User and Customer Engagement Strategies for 2019</h5>
+                      <p class="card-text fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni labore at consequuntur
+                         hic molestiae eligendi illum ducimus doloribus architecto ab iure ullam, atque excepturi inventore et pariatur quod itaque obcaecati.</p>
+                         <div class="row px-2">
+                          <div class="col d-flex">
+
+                           <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp" class="rounded-circle mb-3" style="width: 50px;"alt="Avatar" />
+
+                           <h5 class="mb-2 fs-5 px-4 py-3 font-weight-normal"><strong style="font-weight: 300;">John Doe</strong></h5>
+
+                          </div>
+             
+
+                        </div>
+                       </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="images/Animal-welfare-&-save-birds-campaign-1.png" class="card-img-top" alt="...">
+                    <div>
+                      <p class="Overlapping px-3 py-1">Updates</p>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">10 User and Customer Engagement Strategies for 2019</h5>
+                      <p class="card-text fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, laboriosam! Qui, minus nisi laborum, dolorum 
+                        animi expedita eligendi voluptas laudantium et neque ullam recusandae consequuntur atque ab tempora modi ipsa?</p>
+                        <div class="row px-2">
+                          <div class="col d-flex">
+
+                           <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp" class="rounded-circle mb-3" style="width: 50px;"alt="Avatar" />
+
+                           <h5 class="mb-2 fs-5 px-4 py-3 font-weight-normal"><strong style="font-weight: 300;">John Doe</strong></h5>
+
+                          </div>
+             
+
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
